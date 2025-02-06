@@ -15,6 +15,22 @@ public class Problema01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int numero;
+        int operacion;
+        String cadenaFinal = "";
+        String cadenaFinal2 = "";
+        for (numero = 30; numero >= 10; numero--) {
+
+            for (int contador = 1; contador <= 4; contador++) {
+                operacion = numero * contador;
+                cadenaFinal = String.format("%s%d-", cadenaFinal, operacion);
+
+            }
+            cadenaFinal2 = String.format("%s%s\n", cadenaFinal2, cadenaFinal);
+            cadenaFinal = "";
+
+        }
+        System.out.printf("%s\n", cadenaFinal2);
+
     }
-    
 }
